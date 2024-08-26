@@ -25,20 +25,20 @@ fn rearrange(text: String) -> String {
 #[test]
 fn rearrange_text_version_one() {
     let text = String::from("Leetcode is cool");
-    let result = rearrange(text);
-    assert_eq!(result, "Is cool leetcode");
+    let text = rearrange(text);
+    assert_eq!(text, "Is cool leetcode");
 }
 
 #[test]
 fn rearrange_text_version_two() {
     let text = String::from("Keep calm and code on");
-    let result = rearrange(text);
-    assert_eq!(result, "On and keep calm code");
+    let text = rearrange(text);
+    assert_eq!(text, "On and keep calm code");
 }
 
 #[test]
 fn rearrange_text_version_three() {
     let text = String::from("To be or not to be");
-    let result = rearrange(text);
-    assert_eq!(result, "To be or to be not");
+    let text = rearrange(text);
+    assert_eq!(text, "To be or to be not");
 }
